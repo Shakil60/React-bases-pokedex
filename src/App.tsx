@@ -1,10 +1,12 @@
 import './App.css'
-import PokemonCard from './components/PokemonCard';
+import PokemonCard, { pokemonList } from './components/PokemonCard';
 
 function App() {
   return (
     <div>
-      <PokemonCard />
+      {pokemonList.map((pokemon) => (
+        <PokemonCard key={pokemon.name} pokemon={pokemon} />
+      ))}
     </div>
   );
 }
