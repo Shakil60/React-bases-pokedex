@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import './App.css'
-import PokemonCard from './components/PokemonCard';
+import { useState } from "react";
+import "./App.css";
+
+import PokemonCard from "./components/PokemonCard";
 
 const pokemonList = [
   {
@@ -8,7 +9,7 @@ const pokemonList = [
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
-    {
+  {
     name: "mew",
   },
 ];
@@ -24,8 +25,9 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => setPokemonName("bulbasaur")}>bulbasaur</button>
-      <button onClick={() => setPokemonName("mew")}>mew</button>
+      <nav>
+        {/* plus de boutons en dur ! */}
+      </nav>
       <PokemonCard pokemon={pokemon} />
     </div>
   );
